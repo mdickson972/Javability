@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/assessment_next_btn"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/lesson_forward" />
+
+    <TextView
+        android:id="@+id/assessment_question_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="26dp"
+        android:text="@string/assessment_question_num_placeholder"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/assessment_answer_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/assessment_question"
+        android:layout_alignStart="@+id/assessment_question"
+        android:layout_below="@+id/assessment_question"
+        android:layout_marginTop="30dp" >
+
+        <RadioButton
+            android:id="@+id/assessment_answer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/assessment_answer1_placeholder"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/assessment_answer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/assessment_answer2_placeholder"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/assessment_answer3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/assessment_answer3_placeholder"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+    
+  
+    
+
+    <Button
+        android:id="@+id/assessment_check_answer_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/assessment_answer_group"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/assessment_btn_check_answer" />
+
+    <TextView
+        android:id="@+id/assessment_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/assessment_question_number"
+        android:layout_alignStart="@+id/assessment_question_number"
+        android:layout_below="@+id/assessment_question_number"
+        android:layout_marginTop="10dp"
+        android:text="@string/assessment_question_placeholder"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/assessment_next_btn"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/assessment_check_answer_btn"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:id="@+id/assessment_feedback"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+    </ScrollView>
+
+</RelativeLayout>

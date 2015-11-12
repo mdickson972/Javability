@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- Current Score Setup -->
+    
+    <TextView
+        android:id="@+id/results_assessment_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/previous_3rd_last"
+        android:layout_alignBottom="@+id/previous_3rd_last"
+        android:layout_alignParentStart="true"
+        android:text="@string/results_result_placeholder"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="90sp"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/results_switch_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/results_home_btn"
+        android:layout_alignBottom="@+id/results_home_btn"
+        android:layout_marginStart="25dp"
+        android:background="@drawable/results_btn_all_results"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/results_home_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24dp"
+        android:layout_toEndOf="@+id/results_switch_btn"
+        android:background="@drawable/results_btn_home" />
+    
+    <!-- Previous Scores Setup -->
+    
+    <TextView
+        android:id="@+id/previous_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/previous_last"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/previous_title"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="55dp"
+        android:text="@string/previous_last"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:visibility="invisible" />
+    
+    <TextView
+        android:id="@+id/previous_2nd_last"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/previous_last"
+        android:layout_below="@+id/previous_last"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/previous_2nd_last"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:visibility="invisible" />
+    
+    <TextView
+        android:id="@+id/previous_3rd_last"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/previous_2nd_last"
+        android:layout_below="@+id/previous_2nd_last"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/previous_3rd_last"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:visibility="invisible" />
+    
+    <TextView
+        android:id="@+id/previous_4th_last"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/previous_3rd_last"
+        android:layout_below="@+id/previous_3rd_last"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/previous_4th_last"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:visibility="invisible" />
+    
+    <TextView
+        android:id="@+id/previous_best"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/previous_4th_last"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="55dp"
+        android:text="@string/previous_best"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/previous_last_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/previous_last"
+        android:layout_marginStart="40dp"
+        android:layout_toEndOf="@+id/previous_last"
+        android:text="@string/previous_score_placeholder"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"
+        android:visibility="invisible" />
+    
+    <TextView
+        android:id="@+id/previous_2nd_last_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/previous_2nd_last"
+        android:layout_marginStart="40dp"
+        android:layout_toEndOf="@+id/previous_last"
+        android:text="@string/previous_score_placeholder"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"
+        android:visibility="invisible" />
+    
+    <TextView
+        android:id="@+id/previous_3rd_last_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/previous_3rd_last"
+        android:layout_marginStart="40dp"
+        android:layout_toEndOf="@+id/previous_last"
+        android:text="@string/previous_score_placeholder"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"
+        android:visibility="invisible" />
+    
+    <TextView
+        android:id="@+id/previous_4th_last_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/previous_4th_last"
+        android:layout_marginStart="40dp"
+        android:layout_toEndOf="@+id/previous_last"
+        android:text="@string/previous_score_placeholder"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/previous_best_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/previous_best"
+        android:layout_marginStart="25dp"
+        android:layout_toEndOf="@+id/previous_best"
+        android:text="@string/previous_score_placeholder"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+</RelativeLayout>

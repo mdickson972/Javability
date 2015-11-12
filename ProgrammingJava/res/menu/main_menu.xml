@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.mdickson972.programmingjava.LoginScreen" >
+
+   <item
+        android:id="@+id/menu_sign_out"
+        android:orderInCategory="100"
+        android:title="@string/menu_sign_out"
+        app:showAsAction="ifRoom"/>
+   
+    <item
+        android:id="@+id/view_user_data"
+        android:orderInCategory="100"
+        android:title="@string/user_details_title"
+        app:showAsAction="never"/>
+      
+      
+    <item
+        android:id="@+id/view_progress"
+        android:orderInCategory="100"
+        android:title="@string/MM_viewProgress"
+        app:showAsAction="never"/>
+
+</menu>

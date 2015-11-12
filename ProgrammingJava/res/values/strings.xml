@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Labels for menus -->
+    
+    <string name="app_name">Javability</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_change_color">Change Colour</string>
+    <string name="menu_sign_out">Sign Out</string>
+    <string name="menu_back">Back</string>
+            
+    <!-- Labels for Toasts -->
+    <string name="toast_sign_out">Signed Out Of </string>
+    <string name="toast_register_sucessful">Your account has been registered. Please log in.</string>
+    <string name="toast_register_unsucessful">Invalid entry. Your username or password is invalid.</string>
+    
+    
+    <!-- Labels for Login Page -->
+    
+    <string name="username_label">Username</string>
+    <string name="password_label">Password</string>
+    <string name="register_label">Register</string>
+    <string name="Forgot_label">Forgot Password?</string>
+    <string name="signIn_label">Sign In</string>
+    
+    <!-- Labels for Registration Page -->
+    
+    <string name="reg_title">Registration</string>
+    <string name="reg_username_label">Username</string>
+    <string name="reg_password1_label">Password</string>
+    <string name="reg_password2_label">Repeat Password</string>
+    <string name="reg_email1_label">Email address</string>
+    <string name="reg_email2_label">Repeat email address</string>
+    <string name="reg_logo">AVABILITY</string>
+    
+    <!-- Labels for the Forgot Password page -->
+    
+    <string name="forgot_password_title">Forgot Password</string>
+    <string name="forgot_password_instructions">Please enter a registered email address
+        for your password to be sent to :</string>
+    <string name="forgot_password_email_label">Email address</string>
+    <string name="forgot_password_sendEmail">Send Email</string>
+    
+    <!-- Labels for the User Details page -->
+    
+    <string name="user_details_title">User Details</string>
+    <string name="user_details_user_id">User Id :</string>
+    <string name="user_details_username">Username :</string>
+    <string name="user_details_emailaddress">Email Address :</string>
+    <string name="user_details_current_password">Current Password</string>
+    <string name="user_details_new_password">New Password</string>
+    <string name="user_details_repeat_new_password">Confirm New Password</string>
+    <string name="user_details_placeholder">*****</string>
+    
+    <!-- Labels for Main Menu -->
+    
+    <string name="MM_title">Main Menu</string>
+    <string name="MM_viewProgress">View Progress</string>
+    
+    <!-- Labels for Assessment Screen -->
+    <string name="assessment_title">Assessment</string>
+    <string name="assessment_instructions">The following assessment will contain 
+        10 multiple choice questions. Please select only one answer per question. You must achieve at 
+        least 7 out of 10 to pass the assessment and proceed to the next module</string>
+    <string name="assessment_question_num_placeholder">Question #</string>  
+    <string name="assessment_question_placeholder">Question</string>    
+    <string name="assessment_answer1_placeholder">Answer 1</string>        
+    <string name="assessment_answer2_placeholder">Answer 2</string>       
+    <string name="assessment_answer3_placeholder">Answer 3</string> 
+    
+    <!-- Labels for Previous Scores Screen -->
+    <string name="previous_title">PREVIOUS SCORES</string>
+    <string name="previous_last">Last Attempt :</string>
+    <string name="previous_2nd_last">2nd Last :</string>
+    <string name="previous_3rd_last">3rd Last :</string>
+    <string name="previous_4th_last">4th Last :</string>
+    <string name="previous_best">High Score :</string>
+    <string name="previous_score_placeholder">100%</string>
+    <string name="results_result_placeholder">##%</string> 
+    <string name="results_title">Assessment Results</string> 
+    <string name="assessment_results_title">YOU SCORED</string> 
+    
+    <!-- Labeld for Overall Progress page -->
+    <string name="overall_results_title">TOTAL PROGRESS</string> 
+    
+    
+    
+    <!-- Labels for Coming Soon page -->
+    
+    <string name="coming_title">Coming Soon</string>
+    <string name="coming_instructions">This module\'s content will become available soon!</string>
+    <string name="coming_return">Return to Menu</string>
+    <string name="coming_image_description">Image of a crane</string>
+    
+    <!-- Titles for pages -->
+    
+    <string name="MM_intro">Java 101</string>
+    <string name="MM_selection">Selection Statements</string>
+    <string name="MM_loops">Loops</string>
+    <string name="MM_method1">Methods</string>
+    <string name="MM_array">Arrays</string>
+    <string name="MM_2darray">2D Arrays</string>
+    <string name="MM_overall_progress">Overall Progress</string>
+    <string name="lesson_title">Lesson</string>
+   
+    <!-- Labels for colour menu -->
+    <string name="colour_purple">Purple</string>
+    <string name="colour_blue">Blue</string>
+       
+    
+    <!-- Urls -->
+    
+    <!-- Java 101 -->
+    <string name="java101_url_what_is_java">https://youtu.be/X0WIavjWgIE</string>
+    <string name="java101_url_vars">https://youtu.be/YDGlnp2cqHU</string>
+    <string name="java101_url_operators"><!-- enter url here --></string>
+    <string name="java101_url_decision_making"><!-- enter url here --></string>
+    <string name="java101_url_why_use_java"><!-- enter url here --></string>
+    
+    
+    
+    <!-- Loops -->
+    <string name="loops_url_assignment_operators"><!-- enter url here --></string>
+    <string name="loops_url_increment_decrement"><!-- enter url here --></string>
+    <string name="loops_url_intro_to_loops"><!-- enter url here --></string>
+    <string name="loops_url_while_loop"><!-- enter url here --></string>
+    <string name="loops_url_do_while_loop"><!-- enter url here --></string>
+    <string name="loops_url_for_loop"><!-- enter url here --></string>
+    <string name="loops_url_nested_for_loop"><!-- enter url here --></string>
+    
+    
+    
+    <!-- Description strings for resources -->
+    
+    <string name="lesson_image_view">Where the lesson images go</string>
+    <string name="login_logo_image_view">Where the lesson images go</string>
+    
+
+</resources>

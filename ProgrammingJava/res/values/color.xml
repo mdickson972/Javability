@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="red">#ffff0000</color>
+    <color name="white">#ffffff</color>
+    <color name="background_green">#41ba8b</color>
+    <color name="signin_green">#3d725e</color>
+    <color name="register_green">#14978A</color>
+    <color name="editText_green">#54c096</color>
+    
+</resources>

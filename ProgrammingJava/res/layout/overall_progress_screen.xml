@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_green"
+    android:orientation="vertical" >
+
+    <!-- Overall Score Setup -->
+    
+    <TextView
+        android:id="@+id/overall_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:text="@string/overall_results_title"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/overall_switch_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/overall_home_btn"
+        android:layout_alignBottom="@+id/overall_home_btn"
+        android:layout_marginStart="25dp"
+        android:background="@drawable/overall_btn_topics"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/overall_home_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24dp"
+        android:layout_toEndOf="@+id/overall_switch_btn"
+        android:background="@drawable/results_btn_home" />
+
+    <TextView
+        android:id="@+id/overall_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/overall_switch_btn"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="160dp"
+        android:text="@string/results_result_placeholder"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:visibility="visible"
+        android:textSize="90sp" />
+    
+    <!--  Topic Selection -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@id/overall_home_btn" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/overall_btn_java_101"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="40dp"
+                android:visibility="invisible"
+                android:background="@drawable/mm_btn_java" />
+
+            <Button
+                android:id="@+id/overall_btn_selection_statements"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/overall_btn_loops"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/overall_btn_java_101"
+                android:layout_marginEnd="30dp"
+                android:visibility="invisible"
+                android:background="@drawable/mm_btn_selection" />
+
+            <Button
+                android:id="@+id/overall_btn_loops"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/overall_btn_java_101"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:visibility="invisible"
+                android:background="@drawable/mm_btn_loops" />
+
+            <Button
+                android:id="@+id/overall_btn_methods"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/overall_btn_loops"
+                android:layout_marginEnd="30dp"
+                android:visibility="invisible"
+                android:background="@drawable/mm_btn_methods" />
+
+            <Button
+                android:id="@+id/overall_btn_arrays"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/overall_btn_loops"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:visibility="invisible"
+                android:background="@drawable/mm_btn_arrays" />
+
+            <Button
+                android:id="@+id/overall_btn_2d_arrays"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/overall_btn_arrays"
+                android:layout_marginEnd="30dp"
+                android:visibility="invisible"
+                android:background="@drawable/mm_btn_2darrays" />
+
+            <Button
+                android:id="@+id/overall_btn_constructors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/overall_btn_arrays"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:visibility="invisible"
+                android:background="@drawable/mm_btn_constructors" />
+
+            <Button
+                android:id="@+id/overall_btn_inheritance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/overall_btn_constructors"
+                android:layout_marginBottom="30dp"
+                android:layout_marginEnd="30dp"
+                android:visibility="invisible"
+                android:background="@drawable/mm_btn_inheritance" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

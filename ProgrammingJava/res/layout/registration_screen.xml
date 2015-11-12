@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_green" >
+    
+    <ImageView
+        android:id="@+id/reg_javability_main_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/login_logo_image_view"
+        android:src="@drawable/javability_main_logo" />
+
+<ScrollView
+    android:id="@+id/scrollview"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="180dp" >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="535dp"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/reg_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:ems="10"
+    	android:ellipsize="start"
+   		android:gravity="center_horizontal"
+        android:background="@color/editText_green"
+        android:hint="@string/reg_username_label"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/reg_password1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"        
+        android:layout_below="@id/reg_username"
+        android:layout_marginBottom="25dp"
+        android:ems="10"
+        android:gravity="top|center"
+        android:background="@color/editText_green"
+        android:hint="@string/reg_password1_label"
+        android:textColor="@color/white"
+        android:inputType="textPassword"
+        android:textColorHint="@color/white"
+        android:textSize="22sp" />
+    
+    <EditText
+        android:id="@+id/reg_password2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"        
+        android:layout_below="@id/reg_password1"
+        android:layout_marginBottom="25dp"
+        android:ems="10"
+        android:gravity="top|center"
+        android:background="@color/editText_green"
+        android:hint="@string/reg_password2_label"
+        android:textColor="@color/white"
+        android:inputType="textPassword"
+        android:textColorHint="@color/white"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/reg_email1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reg_password2"
+        android:layout_marginBottom="25dp"
+        android:ems="10"
+        android:gravity="top|center"
+        android:background="@color/editText_green"
+        android:hint="@string/reg_email1_label"
+        android:textColor="@color/white"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/white"
+        android:textSize="22sp" />
+    
+    <EditText
+        android:id="@+id/reg_email2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reg_email1"
+        android:layout_marginBottom="25dp"
+        android:ems="10"
+        android:gravity="top|center"
+        android:background="@color/editText_green"
+        android:hint="@string/reg_email2_label"
+        android:textColor="@color/white"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/white"
+        android:textSize="22sp" />
+
+   
+
+    </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/reg_register_btn"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/register_green"
+        android:text="@string/register_label"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:onClick="saveUserDetails" />
+    
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_green" >
+
+        <Button
+            android:id="@+id/intro_btn_what_is_java"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/intro_btn_what_is_java" />
+
+        <Button
+            android:id="@+id/intro_btn_vars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/intro_btn_operators"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/intro_btn_what_is_java"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/intro_btn_vars" />
+
+        <Button
+            android:id="@+id/intro_btn_operators"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/intro_btn_what_is_java"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/intro_btn_operators" />
+
+        <Button
+            android:id="@+id/intro_btn_decision"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/intro_btn_operators"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/intro_btn_decision" />
+
+        <Button
+            android:id="@+id/intro_btn_why_java"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/intro_btn_decision"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/intro_btn_why_java" />
+
+        <Button
+            android:id="@+id/intro_btn_ready"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/intro_btn_why_java"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/assessment_btn" />
+    </RelativeLayout>
+
+</ScrollView>

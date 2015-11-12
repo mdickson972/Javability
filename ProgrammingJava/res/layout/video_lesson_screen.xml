@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <Button
+        android:id="@+id/lesson_next_btn"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/lesson_forward"
+        android:onClick="nextBtn" />
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lesson_back_btn"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true" >
+        
+        	<VideoView
+		        android:id="@+id/videoView"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentStart="true"
+		        android:layout_alignParentTop="true"
+		        android:layout_marginStart="20dp"
+		        android:layout_marginEnd="20dp"
+		        android:layout_marginTop="18dp"
+		        android:layout_marginBottom="18dp"
+		        android:contentDescription="@string/lesson_image_view"
+		        android:src="@raw/background_default" />
+
+    </RelativeLayout>
+    
+
+</RelativeLayout>
